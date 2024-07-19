@@ -1,0 +1,43 @@
+Password = password
+
+Overview
+
+The Student Record Management System is a console-based application designed to manage student records. The system allows an admin to add, view, and search for student records stored in a text file. Each record includes the student's name, admission number, attendance, and overall grade.
+
+Features
+
+    Add Student Record: Input new student records into the system.
+    View Records: Display all student records in a tabular format.
+    Search Record: Find and display a specific student's record using their admission number.
+    Exit: Close the application.
+
+Code Structure and Principles
+1. Object-Oriented Principles
+
+The code adheres to several core Object-Oriented Programming (OOP) principles:
+
+    Encapsulation: The Student class encapsulates all details related to a student. This includes:
+        name: Student's name
+        admNo: Admission number
+        attendance: Attendance record
+        grade: Overall grade
+
+    The class also includes a method display() to print student details, which encapsulates the behavior associated with the student data.
+
+    Abstraction: The implementation details of data handling (e.g., file I/O operations) are hidden from the user. The user interacts with high-level functions such as addData(), viewData(), and searchData() without needing to know the underlying implementation.
+
+    Separation of Concerns: The application is divided into distinct functions handling specific tasks:
+        addData(): Manages the addition of new records.
+        viewData(): Displays all student records.
+        searchData(): Searches for and displays a specific student record.
+        adminFunction(): Provides the admin interface with options to perform various operations.
+        mainMenu(): Handles the initial user login and navigates to the admin verification.
+
+Error Handling and User Interface
+
+    Error Handling: Basic error handling is implemented for file operations (e.g., checking if the file opens successfully).
+    User Interface: The console interface is used for interaction. It provides clear options and prompts for user input.
+
+Conclusion
+
+The Student Record Management System leverages OOP principles to manage student records efficiently. It encapsulates student data within a class and provides a user-friendly interface for data manipulation. This approach enhances code maintainability and readability, while also adhering to good software design practices.
